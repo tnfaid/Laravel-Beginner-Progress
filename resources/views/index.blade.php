@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Post Page</title>
-</head>
-<body>
+@extends('layout.app')
+<!-- ini lokasi app kan ada di folder layout -->
+
+@section('title')
+	Halaman data Post
+@stop
+
+@section('body')
 	<h1>Halaman Post</h1>
 	@if(count($posts) > 0)
 		<ul>
@@ -15,5 +17,4 @@
 		<p>Tidak ada data</p>
 
 	@endif
-</body>
-</html>
+@stop

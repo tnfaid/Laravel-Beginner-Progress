@@ -15,12 +15,31 @@ Source Video
 
 Conclusion
 - part 9, its about blade basic = when you typing array data in PostController@index, you can show up in index.blade.php with command 
-```return view('index', compact('posts'));
+```
+return view('index', compact('posts'));
 ```
 ```
    <a href="{{ route('post.show', $post['id']) }}"><li>{{ $post['title'] }}</li></a>
 ```
 
 untuk penempatan link, dapat memakai route dengan memanggil name yang ada di route list dan sesuaikan dengan apa yang ingin dimunculkan.
+
+- part 10, layouting with blade. Jadi dengan menggunakan 
+```
+@yield('title')
+
+```
+pada app.blade.php, itu nanti si judul akan berubah secara dinamis tergantung dengan title yang ada pada setiap menu. seperti contohnya pada create.blade.php, disana terdapat beberapa bagian
+
+```
+@extends('layout.php')
+@section('title')
+@section('body')
+
+```
+
+dari sana, extends layout itu maksduhnya lokasi file app.blade.php berada pada folder layout. jadi file create ini turunan dari file app. Kemudian terdapat section title - nah dia ini yang nantinya akan ditampilkan untuk judulnya, sedangkan body itu baris code yang digunakan untuk bagian body 
+
+Dengan menggunakan layouting, kalian bisa lebih mudah untuk melihat struktur dan dia dapat berubah secara dinamis
 
 
