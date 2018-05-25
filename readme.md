@@ -11,12 +11,13 @@
 
 Source Video
 
-[Beginner] Laravel 5.5 (https://www.youtube.com/playlist?list=PL1aMeb5UP_PGje8-vt99VyVuVikcaSpTG).
+[Beginner Laravel 5.5 ](https://www.youtube.com/playlist?list=PL1aMeb5UP_PGje8-vt99VyVuVikcaSpTG).
 
 Conclusion
 - part 9, its about blade basic = when you typing array data in PostController@index, you can show up in index.blade.php with command 
 ```return view('index', compact('posts'));
-
+```
+```
    <a href="{{ route('post.show', $post['id']) }}"><li>{{ $post['title'] }}</li></a>
 ```
 
