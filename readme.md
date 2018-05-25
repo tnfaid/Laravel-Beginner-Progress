@@ -14,7 +14,8 @@ Source Video
 [Beginner Laravel 5.5 ](https://www.youtube.com/playlist?list=PL1aMeb5UP_PGje8-vt99VyVuVikcaSpTG).
 
 Conclusion
-- part 9, its about blade basic = when you typing array data in PostController@index, you can show up in index.blade.php with command 
+## part 9, its about blade basic 
+ when you typing array data in PostController@index, you can show up in index.blade.php with command 
 ```
 return view('index', compact('posts'));
 ```
@@ -24,7 +25,8 @@ return view('index', compact('posts'));
 
 untuk penempatan link, dapat memakai route dengan memanggil name yang ada di route list dan sesuaikan dengan apa yang ingin dimunculkan.
 
-- part 10, layouting with blade. Jadi dengan menggunakan 
+## part 10, layouting with blade. 
+Jadi dengan menggunakan 
 ```
 @yield('title')
 
